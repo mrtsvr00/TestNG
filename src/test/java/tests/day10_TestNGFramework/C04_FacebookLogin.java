@@ -9,7 +9,7 @@ import utilities.ReusableMethods;
 
 public class C04_FacebookLogin {
 
-    @Test
+    @Test (groups = "smoke")
     public void facebookTesti(){
         FacebookPage facebookPage= new FacebookPage();
         //1 - https://www.facebook.com/ adresine gidin
@@ -22,7 +22,7 @@ public class C04_FacebookLogin {
         //3- Faker class’ini kullanarak email ve sifre degerlerini yazdirip, giris butonuna basin
         Faker faker = new Faker();
 
-        facebookPage.emailKutusu.sendKeys(("abc"+faker.internet().emailAddress()));
+        facebookPage.emailKutusu.sendKeys(faker.internet().emailAddress());
         facebookPage.passwordKutusu.sendKeys(faker.internet().password());
         ReusableMethods.bekle(3);
         facebookPage.loginButonu.click();
