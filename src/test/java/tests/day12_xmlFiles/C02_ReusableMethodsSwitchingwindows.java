@@ -10,7 +10,7 @@ import javax.swing.*;
 public class C02_ReusableMethodsSwitchingwindows {
 
     @Test
-    public void switchinWindowsTesti(){
+    public void switchingWindowsTesti(){
         //● https://the-internet.herokuapp.com/windows adresine gidin.
         Driver.getDriver().get("https://the-internet.herokuapp.com/windows");
         //● Sayfadaki textin “Opening a new window” olduğunu doğrulayın.

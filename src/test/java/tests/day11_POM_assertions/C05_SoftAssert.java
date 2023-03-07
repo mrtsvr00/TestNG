@@ -12,7 +12,7 @@ public class C05_SoftAssert {
         /*
             Genel olarak
             test edin denirse hard assert
-            dogrulayin(verify) denirse sotf assert kastedilir
+            dogrulayin(verify) denirse soft assert kastedilir
          */
         // amazon anasayfaya gidip, dogru sayfaya gittigimizi DOGRULAYIN (verify)
         Driver.getDriver().get(ConfigReader.getProperty("amazonUrl"));
