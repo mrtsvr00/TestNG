@@ -8,7 +8,7 @@ import org.testng.annotations.Test;
 import pages.QdPage;
 import utilities.*;
 public class C01_PozitifLoginTestiCross extends TestBaseCross {
-    @Test(groups = "smoke")
+    @Test
     public void pozitifLoginTesti() throws InterruptedException {
         // qd anasayfaya gidin
         driver.get(ConfigReader.getProperty("qdUrl"));
